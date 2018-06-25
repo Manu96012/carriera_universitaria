@@ -1,6 +1,9 @@
 # carriera_universitaria
 Parser in Flex/Bison per il parsing di un file di input formattato in una determinata maniera.
 
+# Prerequisiti
+  Assicurarsi di avere installato sul proprio PC [**GCC**](https://gcc.gnu.org/install/binaries.html), [**Flex**](https://github.com/westes/flex/releases) e [**Bison**](https://www.gnu.org/software/bison/).
+
 Per compilare il tutto ed avere accesso all'eseguibile .exe sarà necessario:
   1. Avviare il prompt dei comandi
   2. Utilizzare il comando cd per spostarsi nella cartella contenente tutti i file
