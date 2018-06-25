@@ -1,0 +1,58 @@
+%{
+/* Studente: Emanuele Filingeri		Matricola:0629173 */
+#include <stdio.h>
+#include <string.h>
+#include<stdbool.h>
+#include "symbol_table.h"
+#include "carriera_universitaria.tab.h"
+%}
+
+
+anno_int "A.A.: 20"
+matricola [0-9]{7}
+codice_materia [0-9]{5}
+nome_minuscolo [a-z]+
+nome_maiuscolo [A-Z][a-z]+
+anno_crediti_voto [0-9]{1,2}
+
+
+white [ \t\n]+
+
+%option noyywrap
+
+%%
+
+{anno_crediti_voto} {
+						yylval.intero = atoi(yytext);
+						return(ANNO_CREDITI_VOTO);
+					}
+
+{matricola} 		{	
+						yylval.stringa = strdup(yytext);
+						return(MATRICOLA);			
+					}
+					
+{codice_materia} 	{	
+						yylval.stringa = strdup(yytext);
+						return(CODICE_MATERIA);		
+					}
+
+{anno_int} 			{	return(ANNO_INT);			}
+{nome_maiuscolo} 	{	return(NOME_MAIUSCOLO);		}
+{nome_minuscolo} 	{	return(NOME_MINUSCOLO);		}
+
+
+"^^^^^" 	{	return(SEP1);			}
+"*****" 	{	return(SEP2);			}
+\( 			{	return(PAR_AP);			}
+\) 			{	return(PAR_CH);			}
+\" 			{	return(APICI);			}
+"->" 		{	return(FRECCIA);		}
+\-			{	return(TRATTINO);		}
+\, 			{	return(VIRGOLA);		}
+\;			{	return(PUNTO_VIRGOLA);	}
+
+{white} ;
+. {return(*yytext);}
+
+%%

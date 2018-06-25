@@ -1,0 +1,16 @@
+A.A.: 2018/19
+^^^^^
+(45362, "Programmazione", 1, 12)
+(45890, "Architetture degli elaboratori", 1, 6)
+(43897, "Analisi matematica", 1, 12)
+(42892, "Basi di dati", 2, 9)
+(56803, "Algoritmi e strutture dati", 2, 9)
+(56485, "Sistemi operativi", 2, 9)
+(45456, "Reti di calcolatori", 3, 9)
+(34234, "Ingegneria del software", 3, 6)
+(67564, "Compilatori", 1, 6)
+*****
+4063722 -> Alessia De Giorgi; 3; 45456, 28 -;
+4323123 -> Franesco Di Liberto; 1; 45890, 25 - 43897, 28 - 67564, 30 -;
+4568870 -> Giuliana Catania; 1; 45362, 30 - 45890, 28 -;
+4234459 -> Daniele Spagnolo; 2; 42892, 24 - 56803, 20 -;
