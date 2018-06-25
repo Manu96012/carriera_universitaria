@@ -11,7 +11,10 @@ Per compilare il tutto ed avere accesso all'eseguibile .exe sarà necessario:
   2. Utilizzare il comando cd per spostarsi nella cartella contenente tutti i file
   3. Eseguire il comando *make*
   
-Verranno creati una serie di file, quello da utilizzare è semplicemente l'eseguibile **carriera_universitaria.exe**
+Verranno creati una serie di file, quello da utilizzare è semplicemente l'eseguibile **carriera_universitaria.exe**.
+
+### Come utilizzare l'eseguibile
+
 Per poter avviare la procedura di parsing, bisognera utilizzare uno dei seguenti comandi:
 
   1. *carriera_universitaria.exe* <*nome_del_file.txt*
